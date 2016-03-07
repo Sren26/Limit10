@@ -12,7 +12,8 @@ count = 0
 contents = f.read()
 
 f1.write(contents)
-for x in line:
+# This limits the amount of characters in each line, as it reads each letter, the count increases by 1, limit 10.
+for x in contents:
 	count += 1
 	if count > limit:
 		f1.write("\n")
